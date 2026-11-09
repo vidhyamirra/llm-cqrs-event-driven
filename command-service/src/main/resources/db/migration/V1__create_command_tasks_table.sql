@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS prompt_tasks (
+    id UUID PRIMARY KEY,
+    user_id VARCHAR(255) NOT NULL,
+    prompt TEXT NOT NULL,
+    status VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE NOT NULL
+);
